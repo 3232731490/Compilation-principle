@@ -4,7 +4,7 @@
 <!--        <div flex="1"></div>-->
 <!--        <div style="width: 100px"></div>-->
         <h1 >
-            我们一直很平凡，但永远不甘于平凡
+            💢💥💤💦
         </h1>
     </div>
 </template>

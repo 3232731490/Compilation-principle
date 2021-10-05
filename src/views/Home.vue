@@ -1,22 +1,22 @@
 <template>
   <div >
-    <el-container>
-      <el-header>
-        <div style="display: flex">
-          <div style="width: 300px">
-            <span>输入</span>
-            <el-input-number v-model="form.num" :min="1" :max="200" style="width: 180px;margin-left: 20px"  @change="handleChange" />
+    <el-container >
+      <el-header style="height: 20vh">
+        <div style="display: flex;flex-direction: column">
+          <div style="text-align: center">
+            <span>输入产生式数目</span>
+            <el-input-number v-model="form.num" :min="1" :max="200" style="width: 40%;margin-left: 5px"  @change="handleChange" />
           </div>
-          <el-input
-                  v-model="form.input"
-                  :rows="2"
-                  type="textarea"
-                  placeholder="Please input"
-                  style="flex: 1;line-height: 60px"
-          />
-          <el-button @click="submit" style="height: 50px;margin: 0 20px;">提交</el-button>
-          <span style="width: 300px;font-weight: lighter;font-size: 14px;">输入要求: 空格分隔单词，回车结束一次输入</span>
-
+          <div style="flex: 1;line-height: 60%;display: flex">
+            <el-input
+                    v-model="form.input"
+                    :rows="2"
+                    type="textarea"
+                    placeholder="依次输入产生式,空格分隔单词，回车结束一次输入"
+                    style="width: 90%"
+            />
+            <el-button @click="submit" style=";margin: 0 20px;flex: 1">提交</el-button>
+          </div>
         </div>
       </el-header>
       <el-main style="height: 60vh">
@@ -102,7 +102,7 @@ export default {
     color: var(--el-text-color-primary);
     /*text-align: center;*/
     line-height: 60px;
-    height: auto;
+    height: 300px;
   }
   .el-main {
     background-color: #e9eef3;
